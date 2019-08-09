@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Snake</title>
+    <script type="text/javascript" src="http://livejs.com/live.js"></script>
+    <script type="text/javascript" src="convNetJs/convnet.js"></script>
+    <script type="text/javascript" src="convNetJs/deepqlearn.js"></script>
+    <script type="text/javascript" src="convNetJs/util.js"></script>
+    <script type="text/javascript" src="convNetJs/vis.js"></script>
+    <style rel="stylesheet">
+        body {
+            width: 100%;
+            box-sizing: border-box;
+            overflow: hidden;
+
+        }
+
+        #snake {
+            background-color: #000;
+            margin: 0 auto;
+            display: block;
+            margin-top: 10%;
+        }
+
+        .inputs {
+            width: 600px;
+            margin: 20px auto;
+        }
+        .inputs>div{
+            margin: 20px auto;
+
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="snake" width="300" height="300"></canvas>
+<div class="inputs">
+    <div>
+        <label for="speed">Speed index</label>
+        <input id="speed" type="number" value="1">
+    </div>
+    <div>
+        <button id="clear-brain">Clear Brain</button>
+    </div>
+</div>
+</body>
+<script src="snake.js"></script>
+</html>
